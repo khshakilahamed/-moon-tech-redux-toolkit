@@ -11,10 +11,6 @@ const Home = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // fetch("http://localhost:5000/products")
-    //   .then((res) => res.json())
-    //   .then((data) => setProducts(data.data));
-
     dispatch(getProducts());
   }, [dispatch]);
 
